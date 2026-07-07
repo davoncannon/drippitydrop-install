@@ -12,7 +12,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://YOUR-SITE.example/drippitydrop/DrippityDrop.ipa</string>
+                    <string>https://davoncannon.github.io/drippitydrop-install/DrippityDrop.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
