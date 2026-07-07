@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Install Drippity Drop</title>
+    <style>
+        body { font-family: -apple-system, system-ui, sans-serif; max-width: 480px;
+               margin: 3rem auto; padding: 0 1.5rem; color: #1c1c1e; }
+        h1 { font-size: 1.6rem; }
+        .btn { display: block; text-align: center; background: #0a84ff; color: white;
+               padding: 1rem; border-radius: 12px; text-decoration: none;
+               font-weight: 600; font-size: 1.1rem; margin: 2rem 0; }
+        .note { color: #6e6e73; font-size: 0.9rem; line-height: 1.5; }
+        code { background: #f2f2f7; padding: 0.1em 0.35em; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <img src="icon-256.png" alt="Drippity Drop" width="96" height="96">
+    <h1>💧 Drippity Drop</h1>
+    <p>LAN file transfer between this device and your Windows PC. No cloud, no App Store.</p>
+
+    <!-- itms-services triggers the iOS OTA install prompt. Must be tapped on the iPhone/iPad itself. -->
+    <a class="btn" href="itms-services://?action=download-manifest&amp;url=https://YOUR-SITE.example/drippitydrop/manifest.plist">
+        Install Drippity Drop
+    </a>
+
+    <p class="note">
+        Open this page in <strong>Safari on the iPhone or iPad</strong> you registered
+        (ad-hoc builds only install on devices whose UDID is in the provisioning profile).<br><br>
+        After tapping Install: if iOS says the app is from an untrusted developer, go to
+        <code>Settings › General › VPN &amp; Device Management</code> and trust your
+        developer certificate.<br><br>
+        This page and <code>manifest.plist</code> must be served over <strong>HTTPS</strong>
+        with a certificate iOS trusts (a real one — Let's Encrypt is fine; self-signed is not).
+    </p>
+</body>
+</html>
